@@ -5,19 +5,13 @@
 Install via bower
 
 ```shell
-bower install the-directive
+bower install angular-facet
 ```
 
 ### Usage
 
 Add it as a dependency to your app and then use the directive in your HTML files.
 
-### Development
-
-Install Gulp via npm if you don't have it
-```shell
-npm install -g gulp
-```
 
 ### Available commands
 
