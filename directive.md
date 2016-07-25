@@ -1,4 +1,4 @@
-# The Directive
+# Facet Directive
 
 ### Installation
 
