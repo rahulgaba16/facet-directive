@@ -22,7 +22,16 @@
         <pre>&lt;the-directive&gt;&lt;/the-directive&gt;</pre>
         <h4>Results</h4>
         <facet filters="mainCtrl.filters" facet-hover="mainCtrl.filterHover" facet-click="mainCtrl.filterClick"></facet>
-        <!-- <facet filters="mainCtrl.filters" ></facet> -->
+
+        <div ng-show="mainCtrl.selectedFilters.length>0">
+          <br/>
+          Selected Filters:
+          <span class="filter" ng-repeat="selectedFilter in mainCtrl.selectedFilters">{{selectedFilter}}</span>
+        </div>
+        <br/>
+        <div ng-show="mainCtrl.hoveredOn">
+          Hovered on: {{mainCtrl.hoveredOn}}
+        </div>
       </div>
     </div>
 

@@ -1,15 +1,15 @@
 /*!
  * facet-directive
  * 
- * Version: 0.0.1 - 2016-07-25T21:31:30.283Z
+ * Version: 0.0.1 - 2016-07-26T18:39:29.785Z
  * License: MIT
  */
 
 
-.the-directive {
-  color: green;
+.facets-container {
+  display: inline-block;
 }
-.the-directive button {
+.facets-container button {
   padding: 10px;
   color: blue;
 }

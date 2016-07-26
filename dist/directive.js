@@ -1,7 +1,7 @@
 /*!
  * facet-directive
  * 
- * Version: 0.0.1 - 2016-07-25T21:31:30.287Z
+ * Version: 0.0.1 - 2016-07-26T18:39:29.789Z
  * License: MIT
  */
 
@@ -39,4 +39,4 @@ angular.module('facet-search', []).directive('facet', function() {
   };
 });
 
-angular.module("facet-search").run(["$templateCache", function($templateCache) {$templateCache.put("directive.html","<div class=\"the-directive\"><p>Facets:</p><div ng-repeat=\"filter in filters\"><input type=\"checkbox\" ng-attr-id=\"{{filter.name}}-{{$index}}\" ng-model=\"filter.selected\" ng-change=\"changeFilter(filter)\" ng-mouseover=\"facetHover(filter)\"> <label ng-attr-for=\"{{filter.name}}-{{$index}}\">{{filter.name}}- Info: {{filter.addtionalInfo}}</label></div></div>");}]);
+angular.module("facet-search").run(["$templateCache", function($templateCache) {$templateCache.put("directive.html","<div class=\"facets-container\"><p>Facets:</p><div class=\"facet\" ng-repeat=\"filter in filters\" ng-mouseover=\"facetHover(filter)\"><input type=\"checkbox\" ng-attr-id=\"{{filter.name}}-{{$index}}\" ng-model=\"filter.selected\" ng-change=\"changeFilter(filter)\"> <label ng-attr-for=\"{{filter.name}}-{{$index}}\">{{filter.name}}- Info: {{filter.addtionalInfo}}</label></div></div>");}]);

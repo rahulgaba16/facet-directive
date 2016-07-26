@@ -1,5 +1,12 @@
 .usage {
   padding: 10px;
-  border: 1px solid rgba(0,0,0,0.09);
+  border: 1px solid rgba(0, 0, 0, 0.09);
   border-radius: 5px;
+}
+.filter {
+  border: 1px solid black;
+  padding: 5px;
+}
+.filter:not(first-of-type) {
+  margin-left: 5px;
 }
