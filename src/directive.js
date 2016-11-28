@@ -10,14 +10,10 @@ angular.module('facet-search', []).directive('facet', function() {
       facetHover: '='
     },
     link: function($scope) {
-      const isFunction = (obj) => {
-        return typeof obj === 'function';
-      };
+      const isFunction = (obj) => (typeof obj === 'function');
 
       const getSelectedFilters = (filters) => {
-        return filters.filter((facetInfo) => {
-          return facetInfo.selected;
-        }).map((facetInfo) => facetInfo.name);
+        return filters.filter(facetInfo => facetInfo.selected).map((facetInfo) => facetInfo.name);
       };
 
       $scope.changeFilter = (facetFilter) => {
